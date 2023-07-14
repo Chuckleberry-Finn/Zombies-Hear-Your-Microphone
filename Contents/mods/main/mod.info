@@ -1,6 +1,6 @@
-id=ChuckTemplate
-name=ChuckTemplate
-description= 
+id=ZombiesHearYourMicrophone
+name=Zombies Hear Your Microphone
+description=Zombies can hear your microphone/proximity chat.
 poster=poster.png
 tags=Build 41
 versionMin=41.0
