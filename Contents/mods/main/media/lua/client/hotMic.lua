@@ -5,18 +5,26 @@ local circle
 ---@param playerObj IsoMovingObject|IsoGameCharacter|IsoPlayer
 function hotMic.onPlayerUpdate(playerObj)
 
-    local volume =  math.min(10, math.max(0, getCore():getMicVolumeIndicator())) * 3
-    local isErr = getCore():getMicVolumeError()
-    local serverVOIPEnable = getCore():getServerVOIPEnable()
-    local voiceEnabled = getCore():getOptionVoiceEnable()
-    local voiceMode = getCore():getOptionVoiceMode()
+    if playerObj:isDead() or playerObj:isAsleep() then return end
 
-    print("volume:"..volume.."  ("..getCore():getMicVolumeIndicator()..")")
+    getCore():setTestingMicrophone(true)
+
+    local volume =  math.min(10, math.max(0, getCore():getMicVolumeIndicator())) * 1.5
+    local isErr = getCore():getMicVolumeError()
+    if isErr then return end
+
+    local serverVOIPEnable = getCore():getServerVOIPEnable()
+    if not serverVOIPEnable and SandboxVars.ZombiesHearYourMicrophone.respectEnableVOIP then return end
+
+    local voiceEnabled = getCore():getOptionVoiceEnable()
+    if not voiceEnabled and SandboxVars.ZombiesHearYourMicrophone.respectEnableVOIP then return end
 
     AddWorldSound(playerObj, volume, volume)
 
-    if circle then getWorldMarkers():removeGridSquareMarker(circle) end
-    circle = getWorldMarkers():addGridSquareMarker("circle_center", "circle_only_highlight", playerObj:getSquare(), 1, 1, 1, true, volume)
+    if getDebug() then
+        if circle then getWorldMarkers():removeGridSquareMarker(circle) end
+        circle = getWorldMarkers():addGridSquareMarker("circle_center", "circle_only_highlight", playerObj:getSquare(), 1, 1, 1, true, volume)
+    end
 
 end
 

@@ -1,0 +1,6 @@
+Sandbox_EN = {
+    Sandbox_ZombiesHearYourMicrophone = "Zombies Hear Your Microphone",
+    Sandbox_ZombiesHearYourMicrophone_respectEnableVOIP = "Respect `Enable VOIP` Setting",
+    Sandbox_ZombiesHearYourMicrophone_respectEnableVOIP_tooltip = "If this is toggled on, the mod will respect the setting of the user(s).\nIf toggled off the game will pick up microphone activity even if VOIP is turned off.\n`Push-to-Talk` is treated as `Voice Activity Detected`.`",
+
+}

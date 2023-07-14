@@ -1,0 +1,6 @@
+VERSION = 1,
+
+option ZombiesHearYourMicrophone.respectEnableVOIP {
+    type = boolean, default = true,
+    page = ZombiesHearYourMicrophone, translation = ZombiesHearYourMicrophone_respectEnableVOIP,
+ }

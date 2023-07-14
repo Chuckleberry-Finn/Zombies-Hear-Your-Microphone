@@ -1,10 +1,13 @@
 version=1
+id=3004111200
 title=Zombies Hear Your Microphone
 description=[h2]Zombies can hear your microphone/proximity chat.[/h2]
+description=Sandbox Option to bypass if VOIP is disabled.
+description=Operates regardless of push-to-talk.
 description=
 description=[url=https://ko-fi.com/chuckleberryfinn][img]https://raw.githubusercontent.com/ChuckTheSheep/chuckImages/main/kofi.png[/img][/url]
 description=
 description=
 description=[h3]Copyright 2023 Chuckleberry Finn. This item is not authorized for posting on Steam, except under the Steam account named Chuckleberry Finn.[/h3]
-tags=Build 41;
-visibility=unlisted
+tags=Build 41;Balance;Hardmode;Multiplayer;Realistic
+visibility=public
