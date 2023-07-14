@@ -6,12 +6,18 @@ local circle
 function hotMic.onPlayerUpdate(playerObj)
 
     if playerObj:isDead() or playerObj:isAsleep() then return end
-
     getCore():setTestingMicrophone(true)
 
-    local volume =  math.min(10, math.max(0, getCore():getMicVolumeIndicator())) * 1.5
+    local factor = 1.5
+    if playerObj:isSneaking() then factor = 0.66 end
+
+    local volume =  math.min(10, math.max(0, getCore():getMicVolumeIndicator())) * factor
     local isErr = getCore():getMicVolumeError()
     if isErr then return end
+
+    local isPTT = getCore():getOptionVoiceMode()==1
+    local isPTTKeyDown = GameKeyboard.isKeyDown(getCore():getKey("Enable voice transmit"))
+    if isPTT and not isPTTKeyDown and SandboxVars.ZombiesHearYourMicrophone.respectEnableVOIP then return end
 
     local serverVOIPEnable = getCore():getServerVOIPEnable()
     if not serverVOIPEnable and SandboxVars.ZombiesHearYourMicrophone.respectEnableVOIP then return end
