@@ -4,3 +4,24 @@ option ZombiesHearYourMicrophone.respectEnableVOIP {
     type = boolean, default = true,
     page = ZombiesHearYourMicrophone, translation = ZombiesHearYourMicrophone_respectEnableVOIP,
  }
+
+option ZombiesHearYourMicrophone.multiplier {
+    type = double, min = 1.5, max = 100, default = 1.5,
+    page = ZombiesHearYourMicrophone, translation = ZombiesHearYourMicrophone_multiplier,
+}
+
+option ZombiesHearYourMicrophone.minimalradius {
+    type = double, min = 1.5, max = 100, default = 1.5,
+    page = ZombiesHearYourMicrophone, translation = ZombiesHearYourMicrophone_minimalradius,
+}
+
+option ZombiesHearYourMicrophone.sneakreduce {
+    type = double, min = 0, max = 1, default = 0.5,
+    page = ZombiesHearYourMicrophone, translation = ZombiesHearYourMicrophone_sneakreduce,
+}
+
+option ZombiesHearYourMicrophone.traitsinfluence {
+	type = enum, numValues = 4, default = 1,
+	page = ZombiesHearYourMicrophone, translation = traitsinfluence,
+	valueTranslation = ZombiesHearYourMicrophone_traitsinfluence,
+}
