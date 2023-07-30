@@ -9,34 +9,32 @@ function hotMic.onPlayerUpdate(playerObj)
 
 
 	local traitsMultiplier = 0
-    local influence = SandboxVars.ZombiesHearYourMicrophone.traitsinfluence
-	local minimalr = SandboxVars.ZombiesHearYourMicrophone.minimalradius
-	local sneakr = SandboxVars.ZombiesHearYourMicrophone.sneakreduce
+    local traitsInfluence = SandboxVars.ZombiesHearYourMicrophone.traitsInfluence
+    local skillsInfluence = SandboxVars.ZombiesHearYourMicrophone.skillsInfluence
+	local sneakReduce = SandboxVars.ZombiesHearYourMicrophone.sneakReduce
 
-    if influence == 1 then
+    if traitsInfluence and traitsInfluence == 1 then
         traitsMultiplier = 0
     else
         -- bad traits 2 or 4 (both)
-        traitsMultiplier = traitsMultiplier + ((influence == 2 or influence == 4) and playerObj:HasTrait("Conspicuous") and 1 or 0)
-        traitsMultiplier = traitsMultiplier + ((influence == 2 or influence == 4) and playerObj:HasTrait("Clumsy") and 0.2 or 0)
+        traitsMultiplier = traitsMultiplier + ((traitsInfluence == 2 or traitsInfluence == 4) and playerObj:HasTrait("Conspicuous") and 1 or 0)
+        traitsMultiplier = traitsMultiplier + ((traitsInfluence == 2 or traitsInfluence == 4) and playerObj:HasTrait("Clumsy") and 0.2 or 0)
 
         -- good traits 3 or 4 (both)
-        traitsMultiplier = traitsMultiplier - ((influence == 3 or influence == 4) and playerObj:HasTrait("Graceful") and 0.6 or 0)
-        traitsMultiplier = traitsMultiplier - ((influence == 3 or influence == 4) and playerObj:HasTrait("Inconspicuous") and 0.5 or 0)
+        traitsMultiplier = traitsMultiplier - ((traitsInfluence == 3 or traitsInfluence == 4) and playerObj:HasTrait("Graceful") and 0.6 or 0)
+        traitsMultiplier = traitsMultiplier - ((traitsInfluence == 3 or traitsInfluence == 4) and playerObj:HasTrait("Inconspicuous") and 0.5 or 0)
 
-        if traitsMultiplier < -0.9 then
-            traitsMultiplier = -0.9
-        end
+        if traitsMultiplier < -0.9 then traitsMultiplier = -0.9 end
     end
 
     local factor = (1 + traitsMultiplier) * SandboxVars.ZombiesHearYourMicrophone.multiplier
-    if influence == 3 or influence == 4 then
-        factor = factor * DISCOUNT_VALUES[1 + playerObj:getPerkLevel(Perks.Lightfoot)] * DISCOUNT_VALUES[1 + playerObj:getPerkLevel(Perks.Sneak)]
-    end
-	
-    if playerObj:isSneaking() then factor = factor * sneakr end
 
-	if factor < minimalr then factor = minimalr end
+    if skillsInfluence and skillsInfluence > 1 then
+        if skillsInfluence == 2 or skillsInfluence == 4 then factor = factor * DISCOUNT_VALUES[1 + playerObj:getPerkLevel(Perks.Lightfoot)] end
+        if skillsInfluence == 3 or skillsInfluence == 4 then factor = factor * DISCOUNT_VALUES[1 + playerObj:getPerkLevel(Perks.Sneak)] end
+    end
+
+    if playerObj:isSneaking() then factor = factor * sneakReduce end
 
     local core = getCore()
     local volume =  math.min(10, math.max(0, core:getMicVolumeIndicator())) * factor

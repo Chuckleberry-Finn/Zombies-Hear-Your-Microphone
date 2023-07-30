@@ -10,18 +10,19 @@ option ZombiesHearYourMicrophone.multiplier {
     page = ZombiesHearYourMicrophone, translation = ZombiesHearYourMicrophone_multiplier,
 }
 
-option ZombiesHearYourMicrophone.minimalradius {
-    type = double, min = 1.5, max = 100, default = 1.5,
-    page = ZombiesHearYourMicrophone, translation = ZombiesHearYourMicrophone_minimalradius,
+option ZombiesHearYourMicrophone.sneakReduce {
+    type = double, min = 0, max = 1, default = 0.66,
+    page = ZombiesHearYourMicrophone, translation = ZombiesHearYourMicrophone_sneakReduce,
 }
 
-option ZombiesHearYourMicrophone.sneakreduce {
-    type = double, min = 0, max = 1, default = 0.5,
-    page = ZombiesHearYourMicrophone, translation = ZombiesHearYourMicrophone_sneakreduce,
-}
-
-option ZombiesHearYourMicrophone.traitsinfluence {
+option ZombiesHearYourMicrophone.skillsInfluence {
 	type = enum, numValues = 4, default = 1,
-	page = ZombiesHearYourMicrophone, translation = traitsinfluence,
-	valueTranslation = ZombiesHearYourMicrophone_traitsinfluence,
+	page = ZombiesHearYourMicrophone, translation = skillsInfluence,
+	valueTranslation = ZombiesHearYourMicrophone_skillsInfluence,
+}
+
+option ZombiesHearYourMicrophone.traitsInfluence {
+	type = enum, numValues = 4, default = 1,
+	page = ZombiesHearYourMicrophone, translation = traitsInfluence,
+	valueTranslation = ZombiesHearYourMicrophone_traitsInfluence,
 }
