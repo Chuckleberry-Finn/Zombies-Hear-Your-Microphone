@@ -2,9 +2,11 @@ Sandbox_EN = {
     Sandbox_ZombiesHearYourMicrophone = "Zombies Hear Your Microphone",
     Sandbox_ZombiesHearYourMicrophone_respectEnableVOIP = "Respect `VOIP` Settings",
     Sandbox_ZombiesHearYourMicrophone_respectEnableVOIP_tooltip = "If this is toggled on, the mod will respect the settings of the user(s).\nIf toggled off the game will pick up microphone activity no matter what, even if VOIP is turned off/not actively enabled.\nNote: Obvious exception is if no mic is present.",
-    Sandbox_ZombiesHearYourMicrophone_multiplier = "Radius microphone sound multiplier.",
-	Sandbox_ZombiesHearYourMicrophone_minimalradius = "Minimal radius for microphone sound.",
-	Sandbox_ZombiesHearYourMicrophone_sneakreduce = "Sneak percentage reduction.",
+
+    Sandbox_ZombiesHearYourMicrophone_multiplier = "Sound Radius Multiplier",
+	Sandbox_ZombiesHearYourMicrophone_minimalradius = "Minimal Radius for Microphone Sound",
+	Sandbox_ZombiesHearYourMicrophone_sneakreduce = "Sneak Percentage Reduction",
+
     Sandbox_traitsinfluence = "Traits and Skills Influence on sound radius",
 	Sandbox_traitsinfluence_tooltip = "Select which Traits or Skills you want to influence the player's sound radius.",
 	Sandbox_ZombiesHearYourMicrophone_traitsinfluence_option1 = "None",
