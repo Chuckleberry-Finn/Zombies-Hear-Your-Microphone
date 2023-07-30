@@ -53,10 +53,11 @@ function hotMic.onPlayerUpdate(playerObj)
 
     AddWorldSound(playerObj, volume, volume)
 
-    if getDebug() then
+    if getDebug() or SandboxVars.ZombiesHearYourMicrophone.visualRadius then
         local worldMarkers = getWorldMarkers()
         if circle then worldMarkers:removeGridSquareMarker(circle) end
-        circle = worldMarkers:addGridSquareMarker("circle_center", "circle_only_highlight", playerObj:getSquare(), 1, 1, 1, true, volume)
+        circle = worldMarkers:addGridSquareMarker("hotMicVisual", "hotMicVisual", playerObj:getSquare(), 1, 1, 1, true, volume)
+        circle:setScaleCircleTexture(true)
     end
 
 end
