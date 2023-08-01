@@ -57,7 +57,7 @@ function hotMic.onPlayerUpdate(playerObj)
         local worldMarkers = getWorldMarkers()
         if circle then worldMarkers:removeGridSquareMarker(circle) end
         circle = worldMarkers:addGridSquareMarker("hotMicVisual", "hotMicVisual", playerObj:getSquare(), 1, 1, 1, true, volume)
-        circle:setScaleCircleTexture(true)
+        if circle then circle:setScaleCircleTexture(true) end
     end
 
 end
