@@ -9,14 +9,14 @@ Sandbox_EN = {
     Sandbox_ZombiesHearYourMicrophone_multiplier = "Sound Radius Multiplier",
 	Sandbox_ZombiesHearYourMicrophone_sneakReduce = "Sneak Percentage Reduction",
 
-    Sandbox_skillsInfluence = "Skills Influence on Sound Radius",
+    Sandbox_ZombiesHearYourMicrophone_skillsInfluence = "Skills Influence on Sound Radius",
 	Sandbox_ZombiesHearYourMicrophone_skillsInfluence_option1 = "No Influence",
 	Sandbox_ZombiesHearYourMicrophone_skillsInfluence_option2 = "Sneaking Only",
 	Sandbox_ZombiesHearYourMicrophone_skillsInfluence_option3 = "Lightfooted Only",
 	Sandbox_ZombiesHearYourMicrophone_skillsInfluence_option4 = "Both Sneaking and Lightfooted",
 
-    Sandbox_traitsInfluence = "Traits Influence on Sound Radius",
-    Sandbox_traitsInfluence_tooltip = "Negative traits: Conspicuous, and Clumsy.\nPositive Traits: Graceful, and Inconspicuous"
+    Sandbox_ZombiesHearYourMicrophone_traitsInfluence = "Traits Influence on Sound Radius",
+    Sandbox_ZombiesHearYourMicrophone_traitsInfluence_tooltip = "Negative traits: Conspicuous, and Clumsy.\nPositive Traits: Graceful, and Inconspicuous"
 	Sandbox_ZombiesHearYourMicrophone_traitsInfluence_option1 = "No Influence",
 	Sandbox_ZombiesHearYourMicrophone_traitsInfluence_option2 = "Negative Traits Only",
 	Sandbox_ZombiesHearYourMicrophone_traitsInfluence_option3 = "Positive Traits Only",

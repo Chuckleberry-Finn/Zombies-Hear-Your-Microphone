@@ -22,12 +22,12 @@ option ZombiesHearYourMicrophone.sneakReduce {
 
 option ZombiesHearYourMicrophone.skillsInfluence {
 	type = enum, numValues = 4, default = 1,
-	page = ZombiesHearYourMicrophone, translation = skillsInfluence,
+	page = ZombiesHearYourMicrophone, translation = ZombiesHearYourMicrophone_skillsInfluence,
 	valueTranslation = ZombiesHearYourMicrophone_skillsInfluence,
 }
 
 option ZombiesHearYourMicrophone.traitsInfluence {
 	type = enum, numValues = 4, default = 1,
-	page = ZombiesHearYourMicrophone, translation = traitsInfluence,
+	page = ZombiesHearYourMicrophone, translation = ZombiesHearYourMicrophone_traitsInfluence,
 	valueTranslation = ZombiesHearYourMicrophone_traitsInfluence,
 }
