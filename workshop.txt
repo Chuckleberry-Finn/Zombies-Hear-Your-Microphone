@@ -1,8 +1,9 @@
 version=1
 id=3004111200
 title=Zombies Hear Your Microphone
-description=[h2]Zombies can hear your microphone/proximity chat.[/h2]
-description=Sandbox Option to bypass VOIP settings.
+description=[h2][b]Zombies can hear your microphone/proximity chat.[/b][/h2]
+description=[h3]Works in Singleplayer and Multiplayer.[/h3]
+description=[h3]Sandbox Options to bypass/enforce VOIP settings.[/h3]
 description=
 description=[url=https://ko-fi.com/chuckleberryfinn][img]https://raw.githubusercontent.com/ChuckTheSheep/chuckImages/main/kofi.png[/img][/url]
 description=
