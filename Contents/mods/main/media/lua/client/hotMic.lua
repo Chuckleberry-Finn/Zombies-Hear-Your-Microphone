@@ -27,7 +27,7 @@ function hotMic.onPlayerUpdate(playerObj)
         if traitsMultiplier < -0.9 then traitsMultiplier = -0.9 end
     end
 
-    local factor = (1 + traitsMultiplier) * SandboxVars.ZombiesHearYourMicrophone.multiplier
+    local factor = (1 + traitsMultiplier) * (SandboxVars.ZombiesHearYourMicrophone.multiplier or 1.5)
 
     if skillsInfluence and skillsInfluence > 1 then
         if skillsInfluence == 2 or skillsInfluence == 4 then factor = factor * DISCOUNT_VALUES[1 + playerObj:getPerkLevel(Perks.Lightfoot)] end
