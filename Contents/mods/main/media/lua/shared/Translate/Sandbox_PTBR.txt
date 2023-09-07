@@ -1,0 +1,14 @@
+Sandbox_PTBR = {
+    Sandbox_ZombiesHearYourMicrophone = "Zumbis podem ouvir seu microfone",
+    Sandbox_ZombiesHearYourMicrophone_respectEnableVOIP = "Respeite as configurações de `VOIP`",
+    Sandbox_ZombiesHearYourMicrophone_respectEnableVOIP_tooltip = "Se essa opção estiver marcada, o mod irá respeitar as configurações dos jogador.\nSe estiver desmarcada o jogo irá usar as configurações do seu microfone, independentemente se o seu VOIP estiver desativado ou sem botão de ativação pressionado.\nNota: Óbviamente o MOD não irá funcionar caso o jogador não tenha microfone.",
+    Sandbox_ZombiesHearYourMicrophone_multiplier = "Multiplicador alcance sonoro do microfone.",
+	Sandbox_ZombiesHearYourMicrophone_minimalradius = "Alcance mínimo para o som do microfone.",
+	Sandbox_ZombiesHearYourMicrophone_sneakreduce = "Percentual de redução agachado.",
+	Sandbox_traitsinfluence = "Influência dos Traços e Habilidades alcance do som",
+	Sandbox_traitsinfluence_tooltip = "Selecione quais Traços ou Habilidades deseja que influênciem no alcance do som do jogador.",
+	Sandbox_ZombiesHearYourMicrophone_traitsinfluence_option1 = "Nenhum",
+	Sandbox_ZombiesHearYourMicrophone_traitsinfluence_option2 = "Negativo",
+	Sandbox_ZombiesHearYourMicrophone_traitsinfluence_option3 = "Positivo",
+	Sandbox_ZombiesHearYourMicrophone_traitsinfluence_option4 = "Ambos",
+}
