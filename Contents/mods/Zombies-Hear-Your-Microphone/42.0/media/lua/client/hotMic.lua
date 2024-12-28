@@ -8,7 +8,6 @@ function hotMic.onPlayerUpdate(playerObj)
     if playerObj:isDead() or playerObj:isAsleep() then return end
     getCore():setTestingMicrophone(true)
 
-
 	local traitsMultiplier = 0
     local traitsInfluence = SandboxVars.ZombiesHearYourMicrophone.traitsInfluence
     local skillsInfluence = SandboxVars.ZombiesHearYourMicrophone.skillsInfluence
@@ -54,7 +53,11 @@ function hotMic.onPlayerUpdate(playerObj)
 
     AddWorldSound(playerObj, volume, volume)
 
-    if getDebug() or SandboxVars.ZombiesHearYourMicrophone.visualRadius then
+    local options = PZAPI.ModOptions:getOptions("ZombiesHearYourMicrophone")
+    local option = options and options:getOption("ZombiesHearYourMicrophone_visualRadius")
+    local optionValue = option and option:getValue()
+
+    if optionValue and optionValue == true then
         local worldMarkers = getWorldMarkers()
         if circle then
             circle:setPosAndSize(playerObj:getX(),playerObj:getY(),playerObj:getZ(),volume*2)

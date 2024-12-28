@@ -1,0 +1,7 @@
+UI_EN = {
+
+UI_Config_ZombiesHearYourMicrophone = "Zombies Hear Your Microphone",
+UI_Config_ZombiesHearYourMicrophone_visualRadius = "Visible Radius Indicator",
+UI_Config_ZombiesHearYourMicrophone_visualRadius_ToolTip = "A visual field around you will indicate the range of impact your speaking has.",
+
+}

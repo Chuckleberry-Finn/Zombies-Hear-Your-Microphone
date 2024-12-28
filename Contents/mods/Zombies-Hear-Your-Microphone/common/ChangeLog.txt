@@ -2,3 +2,8 @@
 - New art.
 - B42 Update.
 [ ------ ]
+
+[ 12/28/24 #2 ]
+- Make visual radius in-game mod-option instead of sandbox.
+- Visual radius no longer always true with debug mode.
+[ ------ ]
