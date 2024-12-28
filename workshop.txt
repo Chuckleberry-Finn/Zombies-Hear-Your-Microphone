@@ -5,7 +5,9 @@ description=[h2][b]Zombies can hear your microphone/proximity chat.[/b][/h2]
 description=[h3]Works in Singleplayer and Multiplayer.[/h3]
 description=[h3]Sandbox Options to bypass/enforce VOIP settings.[/h3]
 description=
-description=[url=https://ko-fi.com/chuckleberryfinn][img]https://raw.githubusercontent.com/ChuckTheSheep/chuckImages/main/kofi.png[/img][/url][url=https://discord.gg/SReMnbV4V7][img]https://raw.githubusercontent.com/Chuckleberry-Finn/chuckImages/main/PZmodCommBanner3.png[/img][/url]
+description=[url=https://ko-fi.com/chuckleberryfinn][img]https://raw.githubusercontent.com/ChuckTheSheep/chuckImages/main/kofi_big.png[/img][/url]
+description=
+[url=https://discord.gg/SReMnbV4V7][img]https://raw.githubusercontent.com/Chuckleberry-Finn/chuckImages/main/PZmodCommBanner3.png[/img][/url]
 description=
 description=[url=https://raw.githubusercontent.com/Chuckleberry-Finn/chuckImages/main/bingo.png][img]https://raw.githubusercontent.com/Chuckleberry-Finn/chuckImages/main/readThrough.png[/img][/url]
 description=[img]https://raw.githubusercontent.com/Chuckleberry-Finn/chuckImages/main/noModPacks.png[/img]
@@ -19,6 +21,6 @@ description=
 description=
 description=[i]Additional sandbox options contributed by Socalschi[/i]
 description=
-description=[h3]Copyright 2023 Chuckleberry Finn. This item is not authorized for posting on Steam, except under the Steam account named Chuckleberry Finn.[/h3]
+description=[h3]Copyright 2024 Chuckleberry Finn. This item is not authorized for posting on Steam, except under the Steam account named Chuckleberry Finn.[/h3]
 tags=Build 41;Balance;Hardmode;Multiplayer;Realistic
 visibility=public

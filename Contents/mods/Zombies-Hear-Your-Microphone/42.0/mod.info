@@ -1,0 +1,9 @@
+id=ZombiesHearYourMicrophone
+name=Zombies Hear Your Microphone
+description=Zombies can hear your microphone/proximity chat.
+poster=poster.png
+author=Chuckleberry Finn
+icon=icon.png
+versionMin=42.0
+require=\ChuckleberryFinnAlertSystem,\errorMagnifier,
+
