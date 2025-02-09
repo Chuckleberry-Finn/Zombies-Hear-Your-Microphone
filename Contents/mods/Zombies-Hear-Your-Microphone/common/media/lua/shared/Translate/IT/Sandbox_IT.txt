@@ -1,0 +1,24 @@
+Sandbox_IT = {
+    Sandbox_ZombiesHearYourMicrophone = "Zombies Hear Your Microphone",
+
+    Sandbox_ZombiesHearYourMicrophone_respectEnableVOIP = "Rispetta le impostazioni `VOIP`",
+    Sandbox_ZombiesHearYourMicrophone_respectEnableVOIP_tooltip = "Se questa opzione è attivata, la mod rispetterà le impostazioni dell'utente/degli utenti.\nSe è disattivata, il gioco rileverà l'attività del microfono in ogni caso, anche se il VOIP è disattivato/non abilitato attivamente.\nNota: l'eccezione ovvia è se non è presente alcun microfono.",
+
+    Sandbox_ZombiesHearYourMicrophone_visualRadius = "Indicatore del raggio sonoro visivo"
+
+    Sandbox_ZombiesHearYourMicrophone_multiplier = "Moltiplicatore del raggio sonoro",
+	Sandbox_ZombiesHearYourMicrophone_sneakReduce = "Riduzione della percentuale in Furtività",
+
+    Sandbox_ZombiesHearYourMicrophone_skillsInfluence = "Influenza delle competenze sul raggio sonoro",
+	Sandbox_ZombiesHearYourMicrophone_skillsInfluence_option1 = "Nessuna influenza",
+	Sandbox_ZombiesHearYourMicrophone_skillsInfluence_option2 = "Solo Furtività",
+	Sandbox_ZombiesHearYourMicrophone_skillsInfluence_option3 = "Solo Passo leggero",
+	Sandbox_ZombiesHearYourMicrophone_skillsInfluence_option4 = "Entrambi: Furtività e Passo leggero",
+
+    Sandbox_ZombiesHearYourMicrophone_traitsInfluence = "Influenza dei tratti sul raggio sonoro",
+    Sandbox_ZombiesHearYourMicrophone_traitsInfluence_tooltip = "Tratti negativi: Vistoso e Goffo.\nTratti positivi: aggraziato e poco appariscente"
+	Sandbox_ZombiesHearYourMicrophone_traitsInfluence_option1 = "Nessuna influenza",
+	Sandbox_ZombiesHearYourMicrophone_traitsInfluence_option2 = "Solo i tratti negativi",
+	Sandbox_ZombiesHearYourMicrophone_traitsInfluence_option3 = "Solo i tratti positivi",
+	Sandbox_ZombiesHearYourMicrophone_traitsInfluence_option4 = "Entrambi: tratti positivi e negativi",
+}
