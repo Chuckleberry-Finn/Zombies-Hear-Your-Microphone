@@ -7,3 +7,7 @@
 - Make visual radius in-game mod-option instead of sandbox.
 - Visual radius no longer always true with debug mode.
 [ ------ ]
+
+[ 1/7/2026 ]
+- Updated trait related code which is new to B42.
+[ ------ ]
