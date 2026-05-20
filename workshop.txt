@@ -17,6 +17,6 @@ description=
 description=
 description=[i]Additional sandbox options contributed by Socalschi[/i]
 description=
-description=[h3]Copyright 2024 Chuckleberry Finn. This item is not authorized for posting on Steam, except under the Steam account named Chuckleberry Finn.[/h3]
+description=[h3]Copyright 2026 Chuckleberry Finn. This item is not authorized for posting on Steam, except under the Steam account named Chuckleberry Finn.[/h3]
 tags=Build 41;Build 42;Audio;Balance;Hardmode;Multiplayer;Realistic
 visibility=public
